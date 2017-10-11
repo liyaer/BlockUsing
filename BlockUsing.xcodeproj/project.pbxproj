@@ -15,6 +15,9 @@
 		D242B4881F7DEBC2000389AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D242B4861F7DEBC2000389AF /* LaunchScreen.storyboard */; };
 		D242B4931F7DEBC2000389AF /* BlockUsingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D242B4921F7DEBC2000389AF /* BlockUsingTests.m */; };
 		D242B49E1F7DEBC2000389AF /* BlockUsingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D242B49D1F7DEBC2000389AF /* BlockUsingUITests.m */; };
+		D2DE95F01F8DF83500E0E050 /* PackageBlockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DE95EF1F8DF83500E0E050 /* PackageBlockVC.m */; };
+		D2DE95F31F8DF8D900E0E050 /* AlterView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DE95F21F8DF8D900E0E050 /* AlterView.m */; };
+		D2DE95FA1F8E03CD00E0E050 /* DWL_VIPAlter.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DE95F91F8E03CD00E0E050 /* DWL_VIPAlter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		D242B4991F7DEBC2000389AF /* BlockUsingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlockUsingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D242B49D1F7DEBC2000389AF /* BlockUsingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockUsingUITests.m; sourceTree = "<group>"; };
 		D242B49F1F7DEBC2000389AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2DE95EE1F8DF83500E0E050 /* PackageBlockVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PackageBlockVC.h; sourceTree = "<group>"; };
+		D2DE95EF1F8DF83500E0E050 /* PackageBlockVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PackageBlockVC.m; sourceTree = "<group>"; };
+		D2DE95F11F8DF8D900E0E050 /* AlterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlterView.h; sourceTree = "<group>"; };
+		D2DE95F21F8DF8D900E0E050 /* AlterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlterView.m; sourceTree = "<group>"; };
+		D2DE95F81F8E03CD00E0E050 /* DWL_VIPAlter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWL_VIPAlter.h; sourceTree = "<group>"; };
+		D2DE95F91F8E03CD00E0E050 /* DWL_VIPAlter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWL_VIPAlter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +110,9 @@
 		D242B4771F7DEBC2000389AF /* BlockUsing */ = {
 			isa = PBXGroup;
 			children = (
-				D242B47E1F7DEBC2000389AF /* ViewController.h */,
-				D242B47F1F7DEBC2000389AF /* ViewController.m */,
+				D242B4811F7DEBC2000389AF /* Main.storyboard */,
+				D2DE95F41F8E028C00E0E050 /* block 的基本使用 */,
+				D2DE95F51F8E029E00E0E050 /* block的封装使用 */,
 				D242B4781F7DEBC2000389AF /* Supporting Files */,
 			);
 			path = BlockUsing;
@@ -111,7 +121,6 @@
 		D242B4781F7DEBC2000389AF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D242B4811F7DEBC2000389AF /* Main.storyboard */,
 				D242B47B1F7DEBC2000389AF /* AppDelegate.h */,
 				D242B47C1F7DEBC2000389AF /* AppDelegate.m */,
 				D242B4841F7DEBC2000389AF /* Assets.xcassets */,
@@ -138,6 +147,44 @@
 				D242B49F1F7DEBC2000389AF /* Info.plist */,
 			);
 			path = BlockUsingUITests;
+			sourceTree = "<group>";
+		};
+		D2DE95F41F8E028C00E0E050 /* block 的基本使用 */ = {
+			isa = PBXGroup;
+			children = (
+				D242B47E1F7DEBC2000389AF /* ViewController.h */,
+				D242B47F1F7DEBC2000389AF /* ViewController.m */,
+			);
+			name = "block 的基本使用";
+			sourceTree = "<group>";
+		};
+		D2DE95F51F8E029E00E0E050 /* block的封装使用 */ = {
+			isa = PBXGroup;
+			children = (
+				D2DE95F71F8E033700E0E050 /* 封装系统的alter */,
+				D2DE95F61F8E02FF00E0E050 /* 模拟自定义的alter */,
+				D2DE95EE1F8DF83500E0E050 /* PackageBlockVC.h */,
+				D2DE95EF1F8DF83500E0E050 /* PackageBlockVC.m */,
+			);
+			name = "block的封装使用";
+			sourceTree = "<group>";
+		};
+		D2DE95F61F8E02FF00E0E050 /* 模拟自定义的alter */ = {
+			isa = PBXGroup;
+			children = (
+				D2DE95F11F8DF8D900E0E050 /* AlterView.h */,
+				D2DE95F21F8DF8D900E0E050 /* AlterView.m */,
+			);
+			name = "模拟自定义的alter";
+			sourceTree = "<group>";
+		};
+		D2DE95F71F8E033700E0E050 /* 封装系统的alter */ = {
+			isa = PBXGroup;
+			children = (
+				D2DE95F81F8E03CD00E0E050 /* DWL_VIPAlter.h */,
+				D2DE95F91F8E03CD00E0E050 /* DWL_VIPAlter.m */,
+			);
+			name = "封装系统的alter";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +323,9 @@
 				D242B4801F7DEBC2000389AF /* ViewController.m in Sources */,
 				D242B47D1F7DEBC2000389AF /* AppDelegate.m in Sources */,
 				D242B47A1F7DEBC2000389AF /* main.m in Sources */,
+				D2DE95F01F8DF83500E0E050 /* PackageBlockVC.m in Sources */,
+				D2DE95FA1F8E03CD00E0E050 /* DWL_VIPAlter.m in Sources */,
+				D2DE95F31F8DF8D900E0E050 /* AlterView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +557,7 @@
 				D242B4A41F7DEBC2000389AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D242B4A51F7DEBC2000389AF /* Build configuration list for PBXNativeTarget "BlockUsingTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +566,7 @@
 				D242B4A71F7DEBC2000389AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D242B4A81F7DEBC2000389AF /* Build configuration list for PBXNativeTarget "BlockUsingUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +575,7 @@
 				D242B4AA1F7DEBC2000389AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
