@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0464FA192390BCCB00255CFB /* OporaterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0464FA182390BCCB00255CFB /* OporaterVC.m */; };
+		0464FA1D2390BD6700255CFB /* BaseUseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0464FA1C2390BD6700255CFB /* BaseUseVC.m */; };
+		0464FA202390C7D400255CFB /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 0464FA1F2390C7D400255CFB /* Person.m */; };
 		D242B47A1F7DEBC2000389AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D242B4791F7DEBC2000389AF /* main.m */; };
 		D242B47D1F7DEBC2000389AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D242B47C1F7DEBC2000389AF /* AppDelegate.m */; };
 		D242B4801F7DEBC2000389AF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D242B47F1F7DEBC2000389AF /* ViewController.m */; };
@@ -38,6 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0464FA172390BCCB00255CFB /* OporaterVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OporaterVC.h; sourceTree = "<group>"; };
+		0464FA182390BCCB00255CFB /* OporaterVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OporaterVC.m; sourceTree = "<group>"; };
+		0464FA1B2390BD6700255CFB /* BaseUseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseUseVC.h; sourceTree = "<group>"; };
+		0464FA1C2390BD6700255CFB /* BaseUseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseUseVC.m; sourceTree = "<group>"; };
+		0464FA1E2390C7D400255CFB /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		0464FA1F2390C7D400255CFB /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		D242B4751F7DEBC2000389AF /* BlockUsing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlockUsing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D242B4791F7DEBC2000389AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D242B47B1F7DEBC2000389AF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -87,6 +96,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0464FA1A2390BCD100255CFB /* 基本使用、响应式、链式编程思想 */ = {
+			isa = PBXGroup;
+			children = (
+				0464FA1B2390BD6700255CFB /* BaseUseVC.h */,
+				0464FA1C2390BD6700255CFB /* BaseUseVC.m */,
+				0464FA1E2390C7D400255CFB /* Person.h */,
+				0464FA1F2390C7D400255CFB /* Person.m */,
+			);
+			name = "基本使用、响应式、链式编程思想";
+			sourceTree = "<group>";
+		};
 		D242B46C1F7DEBC2000389AF = {
 			isa = PBXGroup;
 			children = (
@@ -111,8 +131,9 @@
 			isa = PBXGroup;
 			children = (
 				D242B4811F7DEBC2000389AF /* Main.storyboard */,
-				D2DE95F41F8E028C00E0E050 /* block 的基本使用 */,
-				D2DE95F51F8E029E00E0E050 /* block的封装使用 */,
+				0464FA1A2390BCD100255CFB /* 基本使用、响应式、链式编程思想 */,
+				D2DE95F41F8E028C00E0E050 /* 变量捕获、循环引用 */,
+				D2DE95F51F8E029E00E0E050 /* 封装使用 */,
 				D242B4781F7DEBC2000389AF /* Supporting Files */,
 			);
 			path = BlockUsing;
@@ -123,6 +144,8 @@
 			children = (
 				D242B47B1F7DEBC2000389AF /* AppDelegate.h */,
 				D242B47C1F7DEBC2000389AF /* AppDelegate.m */,
+				D242B47E1F7DEBC2000389AF /* ViewController.h */,
+				D242B47F1F7DEBC2000389AF /* ViewController.m */,
 				D242B4841F7DEBC2000389AF /* Assets.xcassets */,
 				D242B4861F7DEBC2000389AF /* LaunchScreen.storyboard */,
 				D242B4891F7DEBC2000389AF /* Info.plist */,
@@ -149,24 +172,24 @@
 			path = BlockUsingUITests;
 			sourceTree = "<group>";
 		};
-		D2DE95F41F8E028C00E0E050 /* block 的基本使用 */ = {
+		D2DE95F41F8E028C00E0E050 /* 变量捕获、循环引用 */ = {
 			isa = PBXGroup;
 			children = (
-				D242B47E1F7DEBC2000389AF /* ViewController.h */,
-				D242B47F1F7DEBC2000389AF /* ViewController.m */,
+				0464FA172390BCCB00255CFB /* OporaterVC.h */,
+				0464FA182390BCCB00255CFB /* OporaterVC.m */,
 			);
-			name = "block 的基本使用";
+			name = "变量捕获、循环引用";
 			sourceTree = "<group>";
 		};
-		D2DE95F51F8E029E00E0E050 /* block的封装使用 */ = {
+		D2DE95F51F8E029E00E0E050 /* 封装使用 */ = {
 			isa = PBXGroup;
 			children = (
-				D2DE95F71F8E033700E0E050 /* 封装系统的alter */,
-				D2DE95F61F8E02FF00E0E050 /* 模拟自定义的alter */,
 				D2DE95EE1F8DF83500E0E050 /* PackageBlockVC.h */,
 				D2DE95EF1F8DF83500E0E050 /* PackageBlockVC.m */,
+				D2DE95F71F8E033700E0E050 /* 封装系统的alter */,
+				D2DE95F61F8E02FF00E0E050 /* 模拟自定义的alter */,
 			);
-			name = "block的封装使用";
+			name = "封装使用";
 			sourceTree = "<group>";
 		};
 		D2DE95F61F8E02FF00E0E050 /* 模拟自定义的alter */ = {
@@ -254,6 +277,7 @@
 				TargetAttributes = {
 					D242B4741F7DEBC2000389AF = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 8MCBLL5HW5;
 						ProvisioningStyle = Automatic;
 					};
 					D242B48D1F7DEBC2000389AF = {
@@ -273,6 +297,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -321,10 +346,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D242B4801F7DEBC2000389AF /* ViewController.m in Sources */,
+				0464FA1D2390BD6700255CFB /* BaseUseVC.m in Sources */,
 				D242B47D1F7DEBC2000389AF /* AppDelegate.m in Sources */,
 				D242B47A1F7DEBC2000389AF /* main.m in Sources */,
 				D2DE95F01F8DF83500E0E050 /* PackageBlockVC.m in Sources */,
 				D2DE95FA1F8E03CD00E0E050 /* DWL_VIPAlter.m in Sources */,
+				0464FA202390C7D400255CFB /* Person.m in Sources */,
+				0464FA192390BCCB00255CFB /* OporaterVC.m in Sources */,
 				D2DE95F31F8DF8D900E0E050 /* AlterView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,6 +502,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DEVELOPMENT_TEAM = 8MCBLL5HW5;
 				INFOPLIST_FILE = BlockUsing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.du.BlockUsing;
@@ -485,6 +515,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DEVELOPMENT_TEAM = 8MCBLL5HW5;
 				INFOPLIST_FILE = BlockUsing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.du.BlockUsing;

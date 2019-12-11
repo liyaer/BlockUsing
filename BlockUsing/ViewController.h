@@ -7,10 +7,6 @@
 //
 
 
-/*
- *   block 的基本使用
- */
-
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
